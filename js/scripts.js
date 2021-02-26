@@ -1,9 +1,9 @@
- $(document).ready(function() {
-     $('html, body, *').mousewheel(function(e, delta) {
-         this.scrollLeft -= (delta);
-         e.preventDefault();
-     });
-});
+$(function() {
+    $("html").mousewheel(function(event, delta) {
+       this.scrollLeft -= (delta);
+       event.preventDefault();
+    });
+ });
 
 $(window).scroll(function () {
     //save a variable with the current scroll position (a number value)
